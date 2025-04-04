@@ -31,12 +31,12 @@ const Destination = () => {
 
   return (
     <div>
-      {/* Banner Section */}
+     
       <div className="relative">
         <img
-          src={London} // Replace with your desired banner image
+          src={London}
           alt="Destination Banner"
-          className="w-full h-[400px] object-cover" // Adjust height as needed
+          className="w-full h-[400px] object-cover" 
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
           <h1 className="text-4xl font-bold mb-2">Destination Fullwidth</h1>

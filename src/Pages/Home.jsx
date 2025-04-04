@@ -13,7 +13,7 @@ import Seoul from "../assets/seoul1.jpg";
 
 const Home = () => {
    const destinations = [
-        { name: "Home", image: tokyoImage },
+        { name: "Tokyo", image: tokyoImage },
         { name: "Seoul", image: Seoul },
         { name: "Paris", image: Paris },
         { name: "London", image: London },

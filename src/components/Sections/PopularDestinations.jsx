@@ -14,6 +14,7 @@ function PopularDestinations({data}) {
       {
         currentLocation !== '/destinations' &&  <p className="text-gray-500">World's best tourist destinations</p>
       }
+       
       
      
 

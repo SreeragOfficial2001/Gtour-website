@@ -5,28 +5,36 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 z-50 w-full p-4">
+    <nav className="absolute top-0 z-50 w-full p-4 bg-white shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl">GTour</div>
+        <div className="text-black font-bold text-xl">GTour</div>
 
-        <div className="hidden md:flex space-x-4 text-white">
-          <Link to="/" className="hover:text-gray-300">
+        <div className="hidden md:flex space-x-4 text-black">
+          <Link to="/" className="hover:text-gray-500">
             Home
           </Link>
-          <Link to="/destinations" className="hover:text-gray-300">
+          <Link to="/destinations" className="hover:text-gray-500">
             Destinations
           </Link>
-          <span className="hover:text-gray-300">Tours</span>
-          <span className="hover:text-gray-300">Booking</span>
-          <span className="hover:text-gray-300">Pages</span>
-          <span className="hover:text-gray-300">Blog</span>
-          <span className="hover:text-gray-300">Shortcodes</span>
+          <Link to="/about" className="hover:text-gray-500">
+            About Us
+          </Link>
+          <Link to="/packages" className="hover:text-gray-500">
+            Packages
+          </Link>
+          <Link to="/blog" className="hover:text-gray-500">
+            Blog
+          </Link>
+          <Link to="/contact" className="hover:text-gray-500">
+            Contact Us
+          </Link>
+         
         </div>
 
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white focus:outline-none"
+            className="text-black focus:outline-none"
           >
             <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
               {isOpen ? (
@@ -47,31 +55,30 @@ function NavBar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden mt-2">
-          <Link to="/" className="block py-2 px-4 text-white hover:bg-gray-700">
+        <div className="md:hidden mt-2 bg-white shadow-md">
+          <Link to="/" className="block py-2 px-4 text-black hover:bg-gray-100">
             Home
           </Link>
           <Link
             to="/destinations"
-            className="block py-2 px-4 text-white hover:bg-gray-700"
+            className="block py-2 px-4 text-black hover:bg-gray-100"
           >
             Destinations
+          </Link >
+          <Link  to="/about"
+           className="block py-2 px-4 text-black hover:bg-gray-100">
+            About Us
           </Link>
-          <span className="block py-2 px-4 text-white hover:bg-gray-700">
-            Tours
-          </span>
-          <span className="block py-2 px-4 text-white hover:bg-gray-700">
-            Booking
-          </span>
-          <span className="block py-2 px-4 text-white hover:bg-gray-700">
-            Pages
-          </span>
-          <span className="block py-2 px-4 text-white hover:bg-gray-700">
+          <Link  to="/packages" className="block py-2 px-4 text-black hover:bg-gray-100">
+            Packages
+          </Link>
+         
+          <Link  to="/blog" className="block py-2 px-4 text-black hover:bg-gray-100">
             Blog
-          </span>
-          <span className="block py-2 px-4 text-white hover:bg-gray-700">
-            Shortcodes
-          </span>
+          </Link>
+          <Link  to="/contact" className="block py-2 px-4 text-black hover:bg-gray-100">
+            Contact Us
+          </Link>
         </div>
       )}
     </nav>

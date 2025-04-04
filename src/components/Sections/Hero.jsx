@@ -21,9 +21,7 @@ const Hero = () => {
         <h1 className="text-white text-4xl md:text-6xl font-bold animate-fadeIn">
           Global Community for Travelers
         </h1>
-        {/* <p className="text-yellow-400 text-xl md:text-2xl mt-4 animate-fadeIn delay-500">
-          Creating Memories
-        </p> */}
+    
         <TypingTextAnimation words={words}/>
       </div>
     </div>
