@@ -1,10 +1,9 @@
 import React from 'react'
-import PopularDestinations from '../components/Sections/PopularDestinations'
-
 import tokyoImage from "../assets/tokyo.jpg";
 import Paris from "../assets/paris.jpg";
 import London from "../assets/london.jpg";
 import Seoul from "../assets/seoul1.jpg";
+import Articles from '../components/Sections/ArticleCard';
 
 
 const Packages = () => {
@@ -18,7 +17,7 @@ const Packages = () => {
     <div>
     <div className="relative">
            <img
-             src={tokyoImage}
+             src={Seoul}
              alt="Destination Banner"
              className="w-full h-[400px] object-cover"
            />
@@ -27,7 +26,7 @@ const Packages = () => {
              <p className="text-lg">This is sample of page tagline and you can set it up using page option</p>
            </div>
          </div>
-         <PopularDestinations data={destinations} />
+       <Articles articles={destinations}/>
 </div>
   )
 }

@@ -19,7 +19,7 @@ const Home = () => {
         { name: "London", image: London },
       ];
   return (
-    <div className='w-full '>
+    <div className='w-full'>
        
        <Hero/>
        <PopularDestinations data={destinations}/>

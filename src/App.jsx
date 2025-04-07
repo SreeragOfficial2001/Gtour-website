@@ -12,8 +12,8 @@ import ContactUs from './Pages/ContactUs'
 
 const App = () => {
   return (
-    <>
-   <div>
+    <div className='container mx-auto'>
+  
      <NavBar/>
     <Routes>
       <Route path="/" element={<Home/>}></Route>
@@ -23,9 +23,9 @@ const App = () => {
       <Route path="/blog" element={<Blog/>}></Route>
       <Route path="/contact" element={<ContactUs/>}></Route>
     </Routes>
-   </div>
+  
    <Footer/>
-    </>
+    </div>
    
 
   
