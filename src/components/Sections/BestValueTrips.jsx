@@ -1,4 +1,3 @@
-
 import React from "react";
 import frenchAutumnImage from "../../assets/french-autumn.jpg";
 import grandSwitzerlandImage from "../../assets/grandswitzerland.jpg";
@@ -36,12 +35,14 @@ const BestValueTrips = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold">Best Value Trips</h2>
-        <p className="text-gray-500">Best offers trips from us</p>
+        <h2 className="text-2xl sm:text-3xl font-bold">Best Value Trips</h2>
+        <p className="text-gray-500 text-sm sm:text-base">
+          Best offers trips from us
+        </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {trips.map((trip, index) => (
           <div
             key={index}
@@ -50,7 +51,7 @@ const BestValueTrips = () => {
             <img
               src={trip.image}
               alt={trip.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 sm:h-56 object-cover"
             />
             <div className="p-4">
               <div className="flex justify-between items-center mb-2">
@@ -59,10 +60,10 @@ const BestValueTrips = () => {
                   {trip.originalPrice}
                 </span>
               </div>
-              <span className="text-2xl font-bold text-blue-600">
+              <span className="text-xl sm:text-2xl font-bold text-blue-600">
                 {trip.price}
               </span>
-              <p className="text-sm text-gray-600">{trip.details}</p>
+              <p className="text-sm text-gray-600 mt-1">{trip.details}</p>
               <div className="flex justify-between items-center mt-4">
                 <div className="flex items-center">
                   {[...Array(trip.reviews)].map((_, i) => (

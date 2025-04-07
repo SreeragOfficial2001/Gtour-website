@@ -12,7 +12,7 @@ import ContactUs from './Pages/ContactUs'
 
 const App = () => {
   return (
-    <div className='container mx-auto'>
+    <div>
   
      <NavBar/>
     <Routes>

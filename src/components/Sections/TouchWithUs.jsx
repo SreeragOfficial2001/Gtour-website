@@ -10,7 +10,7 @@ function TouchWithUs() {
         backgroundPosition: 'center',
       }}
     >
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+      <div className="container bg-white p-8 rounded-lg shadow-md max-w-md">
         <h2 className="text-2xl font-semibold mb-2">Get In Touch With Us</h2>
         <p className="text-sm text-gray-600 mb-4">This is sample of sub title</p>
 

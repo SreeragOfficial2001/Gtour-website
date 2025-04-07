@@ -1,22 +1,17 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-
-function PopularDestinations({data}) {
+function PopularDestinations({ data }) {
   const currentLocation = useLocation().pathname;
-  
-  
+
   return (
-    <div className="text-center p-6">
-      {
-        currentLocation !== '/destinations' && <h2 className="text-3xl font-bold">Popular Destinations</h2>
-      }
-      {
-        currentLocation !== '/destinations' &&  <p className="text-gray-500">World's best tourist destinations</p>
-      }
-       
-      
-     
+    <div className="container mx-auto px-4 text-center p-6">
+      {currentLocation !== '/destinations' && (
+        <>
+          <h2 className="text-3xl font-bold">Popular Destinations</h2>
+          <p className="text-gray-500">World's best tourist destinations</p>
+        </>
+      )}
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {data?.map((destination, index) => (
@@ -38,4 +33,5 @@ function PopularDestinations({data}) {
     </div>
   );
 }
+
 export default PopularDestinations;

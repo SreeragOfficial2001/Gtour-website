@@ -9,8 +9,8 @@ import Trip6 from "../../assets/Trip6.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-gray-800 text-white py-8 w-full">
+      <div className="px-4 w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-lg font-semibold mb-4">Our Awards</h3>
           <p className="text-sm mb-4">
@@ -46,41 +46,17 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Recent Trips</h3>
           <div className="grid grid-cols-3 gap-2">
-            <img
-              src={Trip1}
-              alt="Trip 1"
-              className="h-20 w-full object-cover"
-            />
-            <img
-              src={Trip2}
-              alt="Trip 2"
-              className="h-20 w-full object-cover"
-            />
-            <img
-              src={Trip3}
-              alt="Trip 3"
-              className="h-20 w-full object-cover"
-            />
-            <img
-              src={Trip4}
-              alt="Trip 4"
-              className="h-20 w-full object-cover"
-            />
-            <img
-              src={Trip5}
-              alt="Trip 5"
-              className="h-20 w-full object-cover"
-            />
-            <img
-              src={Trip6}
-              alt="Trip 6"
-              className="h-20 w-full object-cover"
-            />
+            <img src={Trip1} alt="Trip 1" className="h-20 w-full object-cover" />
+            <img src={Trip2} alt="Trip 2" className="h-20 w-full object-cover" />
+            <img src={Trip3} alt="Trip 3" className="h-20 w-full object-cover" />
+            <img src={Trip4} alt="Trip 4" className="h-20 w-full object-cover" />
+            <img src={Trip5} alt="Trip 5" className="h-20 w-full object-cover" />
+            <img src={Trip6} alt="Trip 6" className="h-20 w-full object-cover" />
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 mt-8 border-t border-gray-700 pt-4 text-center">
+      <div className="px-4 w-full max-w-screen-xl mx-auto mt-8 border-t border-gray-700 pt-4 text-center">
         <p className="text-sm">© Copyright GTour Template Demo</p>
         <div className="mt-2">
           <a href="#" className="text-sm mx-2 hover:underline">
