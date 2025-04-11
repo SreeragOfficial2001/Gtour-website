@@ -8,6 +8,8 @@ import Tokyo from "../../assets/tokyo.jpg";
 import Seoul from "../../assets/seoul1.jpg";
 import Paris from "../../assets/paris.jpg";
 import japanImage from "../../assets/japan.jpg";
+import { FaFacebookF, FaTwitter, FaYoutube, FaPinterest, FaInstagram } from 'react-icons/fa';
+
 
 const TravelTipsCard = () => {
   return (
@@ -270,33 +272,49 @@ const NewsletterSignup = () => {
 };
 
 const ConnectWithUs = () => {
-  return (
-    <div className="bg-white rounded-lg shadow-md p-6">
-      <h3 className="text-lg font-semibold text-gray-800 mb-3">
-        Connect With Us
-      </h3>
-      <div className="flex space-x-3">
-        <a
-          href="#"
-          className="bg-blue-500 hover:bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center"
-        >
-          <span className="text-sm">f</span>
-        </a>
-        <a
-          href="#"
-          className="bg-red-500 hover:bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center"
-        >
-          <span className="text-sm">in</span>
-        </a>
-        <a
-          href="#"
-          className="bg-sky-500 hover:bg-sky-600 text-white rounded-full w-8 h-8 flex items-center justify-center"
-        >
-          <span className="text-sm">t</span>
-        </a>
+    return (
+      <div className="bg-white rounded-lg shadow-md p-6">
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">
+          Connect With Us
+        </h3>
+        <div className="flex space-x-3">
+          <a
+            href="#"
+            className="bg-blue-500 hover:bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center"
+          >
+            <FaFacebookF className="text-sm" />
+          </a>
+          <a
+            href="#"
+            className="bg-sky-500 hover:bg-sky-600 text-white rounded-full w-8 h-8 flex items-center justify-center"
+          >
+            <FaTwitter className="text-sm" />
+          </a>
+          <a
+            href="#"
+            className="bg-red-600 hover:bg-red-700 text-white rounded-full w-8 h-8 flex items-center justify-center"
+          >
+            <FaYoutube className="text-sm" />
+          </a>
+          <a
+            href="#"
+            className="bg-red-500 hover:bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center"
+          >
+            <FaPinterest className="text-sm" />
+          </a>
+          <a
+            href="#"
+            className="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center"
+          >
+            <FaInstagram className="text-sm" />
+          </a>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
+  
+  
+  
+  
 
 export default BlogLayout;
