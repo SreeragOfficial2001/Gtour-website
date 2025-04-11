@@ -4,6 +4,7 @@ import Paris from "../assets/paris.jpg";
 import London from "../assets/london.jpg";
 import Seoul from "../assets/seoul1.jpg";
 import Articles from '../components/Sections/ArticleCard';
+import BlogLayout from '../components/Sections/BlogLayout';
 
 
 const Packages = () => {
@@ -26,7 +27,7 @@ const Packages = () => {
              <p className="text-lg">This is sample of page tagline and you can set it up using page option</p>
            </div>
          </div>
-       <Articles articles={destinations}/>
+       <BlogLayout/>
 </div>
   )
 }
