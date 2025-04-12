@@ -27,7 +27,7 @@ const Packages = () => {
              <p className="text-lg">This is sample of page tagline and you can set it up using page option</p>
            </div>
          </div>
-       <BlogLayout/>
+      <BlogLayout/>
 </div>
   )
 }

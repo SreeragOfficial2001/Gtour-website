@@ -8,6 +8,7 @@ import AboutUs from './Pages/AboutUs'
 import Packages from './Pages/Packages'
 import Blog from './Pages/Blog'
 import ContactUs from './Pages/ContactUs'
+import BlogPostDetail from './components/Sections/BlogPostDetail'
 
 
 const App = () => {
@@ -20,7 +21,9 @@ const App = () => {
       <Route path="/destinations" element={<Destination/>}></Route>
       <Route path="/about" element={<AboutUs/>}></Route>
       <Route path="/packages" element={<Packages/>}></Route>
-      <Route path="/blog" element={<Blog/>}></Route>
+      <Route path="/blog" element={<Blog/>} />
+      <Route path="/blog/:postId" element={<BlogPostDetail />} />
+      
       <Route path="/contact" element={<ContactUs/>}></Route>
     </Routes>
   
