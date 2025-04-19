@@ -6,7 +6,7 @@ function NavBar() {
 
   return (
     <nav className="w-full bg-white shadow-md">
-      {/* Container for navbar content */}
+     
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center">
         <div className="text-black font-bold text-xl">GTour</div>
 
@@ -54,7 +54,7 @@ function NavBar() {
         </div>
       </div>
 
-      {/* Mobile menu container */}
+      
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <div className="max-w-screen-xl mx-auto px-4 pb-2">
