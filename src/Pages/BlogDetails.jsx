@@ -44,32 +44,40 @@ const BlogDetails = () => {
   };
 
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="visible">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="w-full"
+    >
+      {/* Banner */}
       <div className="relative">
         <img
           src={postImage || london}
           alt={postTitle || "Destination Banner"}
-          className="w-full h-[400px] object-cover"
+          className="w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover"
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-          <h1 className="text-4xl font-bold mb-2">
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
             {postTitle || "Destination Fullwidth"}
           </h1>
-          <p className="text-lg">
-            This is sample of page tagline and you can set it up using page
-            option
+          <p className="text-sm sm:text-base md:text-lg">
+            This is a sample page tagline. You can set it up using the page
+            option.
           </p>
         </div>
       </div>
 
-      <div className="container mx-auto py-8 flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+      {/* Main Content */}
+      <div className="container mx-auto py-8 px-4">
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Blog Content */}
           <motion.div
             variants={itemVariants}
-            className="md:col-span-2 flex justify-center"
+            className="w-full lg:w-2/3 flex justify-center"
           >
             <motion.div
-              className="rounded-md shadow-sm overflow-hidden mb-6 w-full max-w-xl"
+              className="rounded-md shadow-sm overflow-hidden w-full"
               variants={cardVariants}
               initial="rest"
               whileHover="hover"
@@ -77,16 +85,16 @@ const BlogDetails = () => {
               <img
                 src={postImage || wayanad}
                 alt={postTitle || "Blog Post Image"}
-                className="w-full max-h-96 object-cover"
+                className="w-full max-h-[400px] object-cover"
               />
-              <div className="p-6">
-                <h1 className="text-xl md:text-3xl font-bold text-gray-900 mb-4">
+              <div className="p-4 sm:p-6">
+                <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                   {postTitle || "Default Blog Title"}
                 </h1>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
                   {blogContent}
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                   More detailed content can go here. You can break it into
                   multiple paragraphs. Add relevant information and engaging
                   details about the topic.
@@ -95,11 +103,12 @@ const BlogDetails = () => {
             </motion.div>
           </motion.div>
 
+          {/* Sidebar */}
           <motion.div
             variants={itemVariants}
-            className="w-full h-96 md:w-64 md:col-span-1 flex justify-center"
+            className="w-full lg:w-1/3 flex justify-center"
           >
-            <div className="bg-gray-100 rounded-lg p-6 shadow-md w-full max-w-md">
+            <div className="bg-gray-100 rounded-lg p-6 shadow-md w-full">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Recent Posts
               </h2>
@@ -113,7 +122,7 @@ const BlogDetails = () => {
                       to={`/blog/${post.id}?title=${post.title}&image=${
                         post.image || london
                       }`}
-                      className="text-gray-700 hover:text-indigo-600"
+                      className="text-gray-700 hover:text-indigo-600 text-sm sm:text-base"
                     >
                       {post.title}
                     </Link>
